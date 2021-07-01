@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  sass_complier_dc:
+    container_name: sass_complier
+    entrypoint: sassc
+    command: input.sass output.css
+    # build: .
+    image: binacslee/sass_complier:latest
+    volumes:
+      - ./:/work
