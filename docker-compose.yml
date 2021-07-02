@@ -6,6 +6,6 @@ services:
     entrypoint: sassc
     command: input.sass output.css
     # build: .
-    image: binacslee/sass_complier:latest
+    image: binacslee/sass-complier:latest
     volumes:
       - ./:/work
